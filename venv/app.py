@@ -21,19 +21,19 @@ def result():
         to_predict_list = list(map(int, to_predict_list))
         result = ValuePredictor(to_predict_list)        
         if int(result)== 0:
-            prediction ='Normal_Weight'
+            prediction ='Normal_Weight HAVE A BALANCED DIET ALWAYS TO MAINTAIN'
         elif int(result)==1:
-            prediction ='Overweight_Level_I'      
+            prediction ='Overweight_Level_I DO EXERCISE FOR 30 MIN DAILY AND FOLLOW DIETPLAN-4'      
         elif int(result)==2:
-            prediction ='Overweight_Level_II'
+            prediction ='Overweight_Level_II DO EXERCISE FOR 30 MIN DAILY AND FOLLOW DIETPLAN-3'
         elif int(result)==3:
-            prediction ='Obesity_Type_I'
+            prediction ='Obesity_Type_I DO EXERCISE FOR 30 MIN DAILY AND FOLLOW DIETPLAN-2'
         elif int(result)==4:
-            prediction ='Insufficient_Weight' 
+            prediction ='Insufficient_Weight EAT WELL AND ENJOY THE BEAUTY OF LIFE' 
         elif int(result)==5:
-            prediction ='Obesity_Type_II'
+            prediction ='Obesity_Type_II DO EXERCISE FOR 30 MIN DAILY AND FOLLOW DIETPLAN-2'
         else:
-            prediction ='Obesity_Type_III'
+            prediction ='Obesity_Type_III DO EXERCISE FOR 45 MIN DAILY AND FOLLOW DIETPLAN-1'
         return render_template("result.html", prediction = prediction)
 
 if __name__ == "__main__":
